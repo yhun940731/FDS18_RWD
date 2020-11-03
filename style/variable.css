@@ -4,4 +4,8 @@
     --theme-default: #14182c;
     --theme-primary: #24388d;
     --theme-secondary: #bae5fb;
+    --theme-disable: #878787;
+    --color-gradient-start: #263d83;
+    --color-gradient-end: #102457;
+    --theme-bright2: #f5f5f5;
 }

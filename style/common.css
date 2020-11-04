@@ -3,13 +3,11 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
-
 .app-header-container,
 .app-main,
 .app-footer-container {
   width: 100%;
 }
-
 /* 헤더 */
 /* 공통 헤더 */
 .app-header {
@@ -19,7 +17,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 /* 공통 로고 */
 .brand {
   width: 176px;
@@ -27,70 +24,56 @@ body {
   margin: 0;
   font-size: 14px;
 }
-
 .brand a {
   display: block;
 }
-
-
-/*푸터섹션*/
+/* 공통 푸터 */
 .app-footer-container {
   background-color: var(--theme-dark);
   color: var(--theme-disable);
 }
-
 .app-footer {
   font-size: 1.2rem;
   display: flex;
   flex-flow: row wrap;
   text-align: center;
 }
-
-.app-footer>* {
-  width: 100%
+.app-footer > * {
+  width: 100%;
 }
-
 .footer-brand {
   padding: 20px 0 10px;
 }
-
 .guide-list {
   order: -1;
-  /*로고보다 위에 넣기 위한 우선순위*/
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding: 15px 0;
 }
-
 .guide-list li {
   margin: 0 5px;
 }
-
 .guide-list a {
   display: block;
   padding: 5px 0;
 }
-
 .address {
-  font-size: normal;
+  font-style: normal;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-
 .address span {
   margin: 10px 5px 0;
 }
-
 .copyright {
   font-size: 1.1rem;
   display: block;
   margin-top: 15px;
   margin-bottom: 30px;
 }
-
-/*공통 위로가기 버튼*/
+/* 공통 위로가기 버튼 */
 .button-goToTop {
   background-color: transparent;
   position: fixed;
@@ -109,14 +92,12 @@ body {
     background-color: transparent;
     padding: 0;
   }
-
   .is-open-menu .ir {
     display: inline-block;
     width: 100%;
     height: 100%;
     background: url(./../images/button-navigation.svg) no-repeat 50% 50%;
   }
-
   /* 모바일 내비게이션 */
   .app-navigation {
     backdrop-filter: blur(5px);
@@ -131,26 +112,21 @@ body {
     padding-top: 66px;
     transition: all 0.2s;
   }
-
   .app-navigation li {
     border-bottom: 1px solid hsla(225, 57%, 30%, 0.5);
   }
-
   .app-navigation li:last-child {
     border-bottom: 0;
   }
-
   .app-navigation a {
     display: block;
     padding: 12px 22px;
     transition: all 0.4s ease;
   }
-
   .app-navigation a:hover,
   .app-navigation a:focus {
     background: #2e437c;
   }
-
   .is-close-menu {
     position: absolute;
     top: 0;
@@ -165,59 +141,47 @@ body {
   .is--active .app-navigation {
     transform: none;
   }
-
-  /*모바일 푸터*/
+  /* 모바일 푸터 */
   .guide-list {
     border-bottom: 1px solid currentColor;
   }
-
-  .copyright,
-  .address {
+  .address,
+  .copyright {
     padding: 0 20px;
   }
-
-  /*모바일 위로가기 버튼 위치*/
+  /* 모바일 위로가기 버튼 */
   .button-goToTop {
     bottom: 15px;
     right: 15px;
   }
 }
-
-
 @media all and (min-width: 768px) {
-
   /* 데스크탑 헤더 */
   .app-header-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
   }
-
   .app-header {
     width: 786px;
   }
-
   .is-open-menu,
   .is-close-menu {
     display: none;
   }
-
   /* 데스크탑 내비게이션 */
   .app-navigation ul {
     display: flex;
     flex-flow: row nowrap;
   }
-
   .app-navigation li {
     margin-left: 8px;
     color: #24388d;
   }
-
-  /*데스트탑 푸터*/
+  /* 데스크탑 푸터 */
   .app-footer-container {
     position: relative;
   }
-
   .app-footer-container::before {
     content: "";
     position: absolute;
@@ -226,13 +190,11 @@ body {
     width: 100%;
     border-top: 1px solid currentColor;
   }
-
   .app-footer {
     width: 740px;
     margin: 0 auto;
   }
-
-  /*데스크탑 위로가기 버튼 위치*/
+  /* 데스크탑 위로가기 버튼 */
   .button-goToTop {
     bottom: 50px;
     right: 50px;

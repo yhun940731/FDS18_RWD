@@ -200,7 +200,7 @@ body {
   .is-open-menu,
   .is-close-menu {
     display: none;
-  }`
+  }
 
   /* 데스크탑 내비게이션 */
   .app-navigation ul {

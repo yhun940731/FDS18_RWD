@@ -78,9 +78,6 @@
 }
 
 /*youtube 영상 섹션*/
-.ediya-youtube {
-}
-
 .ediya-youtube-wrapper {
     margin: 0;
 }
@@ -181,24 +178,20 @@
     font-size: 1.4rem;
 }
 
-.ediya-news-list li{
+.ediya-news-list li {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
-.ediya-news-subject{
+.ediya-news-subject {
     width: 72.5%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.ediya-news-date{
-
-}
-
-.ediya-news .icon-more{
+.ediya-news .icon-more {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -238,7 +231,6 @@
         transform: translateX(-60%);
     }
 }
-
 
 @media all and (min-width: 768px) {
 
@@ -281,17 +273,20 @@
         top: -55px;
         right: -160px;
     }
-    .ediya-section-container{
+
+    .ediya-section-container {
         background: var(--theme-bright2);
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         padding: 85px 0;
     }
-    .ediya-youtube{
+
+    .ediya-youtube {
         width: 365px;
     }
-    .ediya-inform-container{
+
+    .ediya-inform-container {
         width: 400px;
     }
 }

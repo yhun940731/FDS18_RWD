@@ -1,0 +1,129 @@
+/* 공통 수상내역 */
+.award-container {
+    background: var(--theme-bright2);
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.news__award__year {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.award-headline {
+    font-weight: 700;
+    color: var(--theme-primary);
+    margin: 0 25px 0 0;
+}
+
+/* .news_award__year내 수상내역 목록 (ul 요소) */
+.award-list {
+    flex-grow: 1;
+    border-left: 1px solid #c8cde2;
+    position: relative;
+}
+
+.award-list::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    transform: translateX(-50%);
+    background-color: var(--theme-primary);
+    border-radius: 50%;
+}
+
+/* .news_award__year내 수상내역 목록 항목 (li 요소) */
+.award-item {
+    margin-bottom: 20px;
+}
+
+/* 수상내역의 경우 details, summary 요소를 사용하여 마크업 */
+/* .news_award__year내 수상내역 (summary 요소) */
+.award-subject {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--theme-dark);
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    padding: 5px 30px 5px 5px;
+    line-height: 1.5;
+}
+
+/* summary 요소의 기본 불릿을 제거하가 위한 선언 */
+.eaward-subject::marker {
+    display: none;
+}
+
+.award-subject::-webkit-details-marker {
+    display: none;
+    color: transparent;
+}
+
+/* details 요소의 속성 값이 open일 경우 summary 요소의 배경이미지(접을 수 있음을 나타내는 배경이미지) 변경 */
+details[open] .award-subject::after {
+    background-image: url(../images/icon-arrow-up.svg);
+}
+
+/* summary 요소의 기본 배경 이미지 (펼칠 수 있음을 나타내는 배경이미지) */
+.award-subject::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon-arrow-down.svg) no-repeat 0 0 / 100% 100%;
+}
+
+/* summary 내 수상 "월"을 위한 마크업 (b 요소) */
+.award-subject b {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 25px;
+    display: inline-block;
+  }
+
+  /* 수상내역 썸네일 이미지 (figure 요소) */
+.award-thumbnail {
+    margin-left: 25px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .award-thumbnail figcaption {
+    margin-top: 10px;
+  }
+
+  /* 수상내역 텍스트 (p 요소 - 내부에 span 요소와 time 요소가 포함 됨) */
+.award-item p {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  /* 수상날짜 (time 요소) */
+  .award-date {
+    color: #5b6aa9;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+
+@media all and (min-width: 768px) {
+
+    /* 데스크탑 수상내역 */
+    .news__award {
+        width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .award-container {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}
